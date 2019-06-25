@@ -1,0 +1,109 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "0a29ccc3-9ac1-40ea-a142-18ccd3af9e2a": {
+        "id": "0a29ccc3-9ac1-40ea-a142-18ccd3af9e2a",
+        "parent": null,
+        "name": "indunilSachithra",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "f7e98bf3-2ee5-47d0-ac88-99804208e685"
+        ],
+        "isRemovable": false,
+        "filePath": "indunilSachithra"
+      },
+      "f7e98bf3-2ee5-47d0-ac88-99804208e685": {
+        "id": "f7e98bf3-2ee5-47d0-ac88-99804208e685",
+        "parent": "0a29ccc3-9ac1-40ea-a142-18ccd3af9e2a",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "indunilSachithra/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigusEast1addNotenotesget",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "0a29ccc3-9ac1-40ea-a142-18ccd3af9e2a",
+    "openFiles": [
+      "f7e98bf3-2ee5-47d0-ac88-99804208e685"
+    ],
+    "currentFileId": "f7e98bf3-2ee5-47d0-ac88-99804208e685",
+    "resources": {
+      "apigusEast1addNotenotesget": {
+        "name": "apigusEast1addNotenotesget",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "addNote",
+          "apiId": "7hlarzyh5j",
+          "endpointType": "EDGE",
+          "rootResourceId": "cdrq2qazvd",
+          "existingResources": {
+            "/notes": "blb4ta",
+            "/": "cdrq2qazvd"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/notes",
+          "resourceName": "notes",
+          "resourceId": "blb4ta",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "test11",
+          "mode": 1
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "indunilSachithra",
+    "projectDescription": "indunilSachithra",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1561437606117
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "indunilSachithra",
+      "url": "https://github.com/Indunil1992/indunilSachithra"
+    }
+  }
+}
